@@ -24,8 +24,8 @@ document.addEventListener("mouseup", () => {
 
 document.addEventListener("mousemove", event => {
   if (focus) {
-    rotateX = (event.clientY / 3).toFixed(0);
-    rotateY = (event.clientX / 3).toFixed(0);
+    rotateX = (event.clientY / 2).toFixed(0);
+    rotateY = (event.clientX / 2).toFixed(0);
 
     ul.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
   } else return;

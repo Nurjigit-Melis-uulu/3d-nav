@@ -86,6 +86,10 @@ li:active {
 }
 
 li:hover .side {
+  background: rgb(22, 55, 97);
+}
+
+li:hover .front {
   background: rgb(29, 72, 129);
 }
 
@@ -94,5 +98,9 @@ li.active {
 }
 
 li.active .side {
-  background: rgb(129, 119, 29);
+  background: rgb(99, 91, 23);
+}
+
+li.active .front {
+  background: rgb(150, 138, 36);
 }
