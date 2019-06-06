@@ -12,8 +12,6 @@ section {
 }
 
 nav {
-  width: 60px;
-  height: 300px;
   perspective: 500px;
 }
 
@@ -30,10 +28,11 @@ li {
   width: 60px;
   height: 60px;
   position: relative;
+  transform-style: preserve-3d;
 }
 
 .side {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0);
   position: absolute;
   color: white;
   display: flex;
@@ -75,4 +74,25 @@ li {
   width: 60px;
   height: 30px;
   transform: rotateX(-90deg) translateZ(45px);
+}
+
+.front i {
+  transform: translateZ(16px);
+  z-index: 99;
+}
+
+li:active {
+  transform: translateZ(-15px);
+}
+
+li:hover .side {
+  background: rgb(29, 72, 129);
+}
+
+li.active {
+  transform: translateZ(10px);
+}
+
+li.active .side {
+  background: rgb(129, 119, 29);
 }

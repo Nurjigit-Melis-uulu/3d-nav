@@ -1,8 +1,18 @@
 let ul = document.querySelector("ul");
+let li = document.querySelectorAll("li");
 
 let rotateY = 0;
 let rotateX = 0;
 let focus = false;
+
+li.forEach(element => {
+  element.addEventListener("click", () => {
+    li.forEach(element => {
+      element.className = "";
+    });
+    element.className = "active";
+  });
+});
 
 document.addEventListener("mousedown", () => {
   focus = true;
