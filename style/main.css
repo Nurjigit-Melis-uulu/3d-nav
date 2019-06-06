@@ -105,3 +105,28 @@ li.active .side {
 li.active .front {
   background: rgb(150, 138, 36);
 }
+
+.controls {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  perspective: 100px;
+}
+
+button {
+  min-width: 60px;
+  padding: 5px 0;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  transform-style: preserve-3d;
+  transform: rotateX(25deg);
+}
+
+button:active {
+  transform: translateZ(-10px) rotateX(35deg);
+}
