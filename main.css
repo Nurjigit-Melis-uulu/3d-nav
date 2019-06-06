@@ -14,6 +14,7 @@ section {
 nav {
   width: 60px;
   height: 300px;
+  perspective: 500px;
 }
 
 ul {
@@ -23,7 +24,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  transform: rotateY(10deg);
+  transform: rotateY(25deg) rotateX(-25deg);
 }
 
 li {
@@ -37,44 +38,38 @@ li {
   position: absolute;
 }
 
-.front,
+.front {
+  width: 60px;
+  height: 60px;
+  transform: translateZ(15px);
+}
+
 .back {
   width: 60px;
   height: 60px;
+  transform: rotateY(180deg) translateZ(15px);
 }
 
-.left,
 .right {
   width: 30px;
   height: 60px;
-}
-
-.bottom,
-.top {
-  width: 60px;
-  height: 30px;
-}
-
-.front {
-  transform: translateZ(150px);
-}
-
-.back {
-  transform: rotateY(180deg) translateZ(150px);
-}
-
-.right {
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(45px);
 }
 
 .left {
-  transform: rotateY(-90deg) translateZ(150px);
+  width: 30px;
+  height: 60px;
+  transform: rotateY(-90deg) translateZ(15px);
 }
 
 .top {
-  transform: rotateX(90deg) translateZ(150px);
+  width: 60px;
+  height: 30px;
+  transform: rotateX(90deg) translateZ(15px);
 }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(150px);
+  width: 60px;
+  height: 30px;
+  transform: rotateX(-90deg) translateZ(45px);
 }
